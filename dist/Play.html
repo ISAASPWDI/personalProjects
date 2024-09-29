@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<!-- Head -->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made by Stivens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./assets/img/loki.jpg">
+</head>
+<!-- Body -->
+
+<body>
+    <!-- Nav-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fs-5 fixed-top w-100">
+        <div class="container p-4">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/images/hammer.png" alt="This is the Thor's Hammer">
+            </a>
+            <button class="navbar-toggler shadow" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="mt-4 mt-sm-4 collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item mb-3 ms-xl-4 fs-lg marginstart">
+                        <a class="nav-link" aria-current="page" href="./About.html">Read about abigail</a>
+                    </li>
+                    <li class="nav-item mb-3 ms-xl-4 fs-lg marginstart">
+                        <a class="nav-link" href="./Ajax.html">AJAX</a>
+                    </li>
+                    <li class="nav-item mb-3 ms-xl-4 fs-lg marginstart">
+                        <a class="nav-link" href="./MeetBF.html">Meet her best friend</a>
+                    </li>
+
+                    <li class="nav-item mb-3 ms-xl-4 fs-lg marginstart">
+                        <a class="nav-link" href="./Play.html">Play a game</a>
+                    </li>
+                    <li class="nav-item mb-3 ms-xl-4 fs-lg marginstart">
+                        <a class="nav-link" href="./Contact.html">Contact her</a>
+                    </li>
+                </ul>
+                <form class="d-flex fs-4" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Main -->
+    <main class="sticky-top mt-5 container">
+
+        <H1 class="mb-5 text-center">GAMES SECTION</H1>
+
+        <div class="row p-5 justify-content-center">
+            <section
+                class="border-data col-12 col-sm-12 col-md-6 col-lg-6 data d-flex flex-column p-5 padding-medium-data">
+                <div class="d-flex justify-content-between ms-2 mb-4">
+                    <h2 class="fs-4 ">Mortgage Calculator</h2>
+                    <button type="button" class="btn btn-primary-style btn-width-mobile">Clear All</button>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <p>Mortgage amount</p>
+                            <div class="input-group mb-3 ">
+                                <div class="input-group">
+                                    <span class="input-group-text input-bg ">$</span>
+                                    <input type="text" class="form-control firstInput border-bg form-calculate-style"
+                                        pattern="^[1-9][0-9]{0,8}(\.[0-9]{1,9})?$" id="amount"
+                                        aria-label="Amount (to the nearest dollar)">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <p>Mortgage term</p>
+                            <div class="input-group mb-3">
+                                <div class="input-group">
+                                    <input type="text" class="form-control secondInput border-bg form-calculate-style"
+                                        pattern="^[1-9][0-9]{0,8}(\.[0-9]{1,9})?$" id="term"
+                                        aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text input-bg">years</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <p>Interest Rate</p>
+                            <div class="input-group mb-3 ">
+                                <div class="input-group wrong-pattern">
+                                    <input type="text" class="form-control thirdInput border-bg form-calculate-style"
+                                        pattern="^[1-9][0-9]{0,8}(\.[0-9]{1,9})?$" title="Write a correct number" id="rate"
+                                        aria-label="Amount (to the nearest dollar)">
+                                    <span class="input-group-text input-bg">%</span>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mortgage-type">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>Mortgage type</p>
+                                <div class="form-check border p-2 mb-2">
+                                    <input class="form-check-input ms-1" type="radio" name="radioDefault"
+                                        id="repayment">
+                                    <label class="form-check-label ms-3" for="repayment">
+                                        Repayment
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="form-check border p-2 mb-4">
+                                    <input class="form-check-input ms-1 " type="radio" name="radioDefault"
+                                        id="interest">
+                                    <label class="form-check-label   ms-3" for="interest">
+                                        Interest only
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12">
+                        <button type="submit" class="calculate-repay btn btn-primary-style w-75 p-2"> <img class="me-2"
+                                src="./assets/images/icon-calculator.svg" alt=""> Calculate Repayments</button>
+                    </div>
+
+
+                </div>
+
+
+            </section>
+            <section class="col-12 col-sm-12 col-md-6 col-lg-6 results bg-results padding-medium-results">
+                <div class="div-results d-flex align-items-center h-75 flex-column text-center margin-results">
+                    <img class="img-fluid" src="./assets/images/illustration-empty.svg" alt="">
+                    <h3>
+                        Results shown here
+                    </h3>
+                    <p>
+                        Complete the form and click “calculate repayments” to see what
+                        your monthly repayments would be.
+                    </p>
+
+
+                </div>
+
+            </section>
+        </div>
+
+        <section class="age-calculator-app p-4 h-100">
+            <div class="row container d-flex justify-content-center age-calculator">
+                <div class="row col-12 mt-4 justify-content-sm-around justify-content-md-start">
+                    <div class="col-4 age-inputs-margin">
+                        
+                        <div class="input-group mb-4 flex-column">
+                            <p class="age-inputs">DAY</p>
+                            <input type="text" class="form-control age-inputs-value" aria-label="Amount (to the nearest dollar)" placeholder="DD" id="day">
+                        </div>
+                    </div>
+                    <div class="col-4 age-inputs-margin">
+                        
+                        <div class="input-group mb-4 flex-column">
+                            <P class="age-inputs">MONTH</P>
+                            <input type="text" class="form-control age-inputs-value" aria-label="Amount (to the nearest dollar)" placeholder="MM" id="month">
+                        </div>
+                    </div>
+                    <div class="col-4 age-inputs-margin">
+                        
+                        <div class="input-group mb-4 flex-column">
+                            <p class="age-inputs">YEAR</p>
+                            <input type="text" class="form-control age-inputs-value" aria-label="Amount (to the nearest dollar)" placeholder="YYYY" id="year">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center flex-column position-relative mb-4 margin-button">
+                    <hr class="w-100 width-hr">
+                    <button type="submit" class="btn-age-calculator btn btn-outline-dark rounded-circle position-absolute top-50 start-50 translate-middle">
+                        <img class="img-fluid rounded-circle" src="./img/icon-arrow.svg" alt="">
+                    </button>
+
+                </div>
+                <div class="row col-12 mb-4 ms-2">
+                    <div class="col-12 d-flex">
+                        <p class="age-results"> -- </p>
+                        <p class="age-results-text">years</p>
+                    </div>
+                    <div class="col-12 d-flex">
+                        <p class="age-results"> -- </p>
+                        <p class="age-results-text">months</p>
+                    </div>
+                    <div class="col-12 d-flex">
+                        <p class="age-results"> -- </p>
+                        <p class="age-results-text">days</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Hammer Button-->
+        <div class="fixed-bottom bottom-0 ms-5 mb-5 d-flex flex-column flex-sm-row hammer-width">
+            <div class="accordion d-flex" id="accordionExample">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button me-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Hammer Speed
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <button type="button" class="btn shadow btn-outline-success me-4 btn1 mb-3">Hammer speed
+                                1</button>
+                            <button type="button" class="btn shadow btn-outline-success me-4 btn2 mb-3">Hammer speed
+                                2</button>
+                            <button type="button" class="btn shadow btn-outline-success me-4 btn3 mb-3">Hammer speed
+                                3</button>
+                            <button type="button"
+                                class="btn shadow btn-outline-danger me-4 btn4  mb-4 mt-3 btnSmall">Stop</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="bg-body-tertiary shadow-footer">
+        <p class="d-flex text-white justify-content-center p-2">
+            Contact the developer in:
+        </p>
+        <nav class="d-flex justify-content-evenly mb-3">
+
+            <a href="https://www.facebook.com/stevens.aliaga.5" target="_blank"><i
+                    class="bi bi-facebook text-white fs-3 fs-lg-un"></i></a>
+            <a href="https://wa.me/51977931470?text=¡Hola!,%20me%20interesa%20tu%20trabajo..." target="_blank"><i
+                    class="bi bi-whatsapp text-white fs-3 fs-lg-un"></i></a>
+            <a href="https://github.com/ISAASPWDI" target="_blank"><i
+                    class="bi bi-github text-white fs-3 fs-lg-un"></i></a>
+            <a href="https://www.linkedin.com/in/stivens-aliaga-05bb39226/" target="_blank"><i
+                    class="bi bi-linkedin text-white fs-3 fs-lg-un"></i></a>
+        </nav>
+        <p class="d-flex text-white justify-content-center mb-0">
+            <small class="text-white">&copy; 2024 Stivens</small>
+        </p>
+
+    </footer>
+    <!-- BootStrap Javascript y carpeta main de Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js" type="module"></script>
+
+</body>
+
+</html>

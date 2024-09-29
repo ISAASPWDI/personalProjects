@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Made by Stivens</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./assets/img/loki.jpg">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fs-5 fixed-top w-100">
+            <div class="container p-4">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/images/hammer.png" alt="This is the Thor's Hammer">
+                </a>
+                <button class="navbar-toggler shadow" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="mt-4 mt-sm-4 collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item mb-3 ms-xl-4 fs-lg marginstart">
+                            <a class="nav-link" aria-current="page" href="./About.html">Read about abigail</a>
+                        </li>
+                        <li class="nav-item mb-3 ms-xl-4 fs-lg marginstart">
+                            <a class="nav-link" href="./Ajax.html">AJAX</a>
+                        </li>
+                        <li class="nav-item mb-3 ms-xl-4 fs-lg marginstart">
+                            <a class="nav-link" href="./MeetBF.html">Meet her best friend</a>
+                        </li>
+
+                        <li class="nav-item mb-3 ms-xl-4 fs-lg marginstart">
+                            <a class="nav-link" href="./Play.html">Play a game</a>
+                        </li>
+                        <li class="nav-item mb-3 ms-xl-4 fs-lg marginstart">
+                            <a class="nav-link" href="./Contact.html">Contact her</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex fs-4" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    
+    
+    <main class="sticky-top mt-5 container">
+
+        <h1 class="text-center">To do List</h1>
+        <!-- To Do List App -->
+        <section class="section-my-tasks h-100 ms-3 me-3 mt-5">
+            <div class="d-flex flex-column text-date h-75">
+                <div class="d-flex container justify-content-between">
+                    <div class="d-flex dateText">
+
+                        <div class="dayText">
+                            <p class="day-task"></p>
+
+                        </div>
+
+                        <div class="specific-date">
+                            <p class="month-task align-self-start"></p>
+                            <p class="year-task align-self-center"></p>
+                        </div>
+
+                    </div>
+                    <div class="d-flex dayDateText align-items-center">
+                        <p class="nameDay-task"></p>
+                    </div>
+                </div>
+                <div class="container">
+                    <form class="row">
+                        <div class="col-9">
+                            <input type="text" name="taskInput" class="form-control add-task-input" id="inputPassword2"
+                                placeholder="New task" aria-label="New task">
+                        </div>
+                        <div class="col-3 d-flex justify-content-center ">
+                            <button type="submit" class="btn btn-outline-dark add-task-btn"><i
+                                    class="bi bi-calendar-plus"></i></button>
+                        </div>
+                        <div class="d-flex justify-content-end col-12 mt-3">
+                            <button type="button" class="btn btn-outline-danger sort-task-btn">Sort</button>
+                        </div>
+                    </form>
+                </div>
+
+
+
+            </div>
+            <div class="row">
+                <div class="d-flex col-12 mt-3 justify-content-between">
+                    <div class="d-flex  pending-tasks align-items-center">
+                        <p class="number-pending-tasks ms-3 "></p>
+                    </div>
+                    <div class="clear-tasks-btn">
+                        <button type="button" class="btn btn-outline-danger clear-tasks-btn">Clear All</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Product List -->
+        <section class="product-list mt-5 ms-2 me-2 rounded-4">
+
+                <h2 class="product-list-title mb-4">Desserts</h2>
+                <template id="product-list-template">
+                        <div class="col dessert-container">
+                            <div class="card h-100">
+                                <div class="position-relative card-container">
+                                    <img src="" class="card-img-top" alt="">
+                                    <div class="position-absolute top-100 start-50 translate-middle card-img-btn">
+                                        <button type="button" class="btn btn-warning product-list-btn rounded-pill"></button>
+                                    </div>
+                                </div>
+
+                                <div class="card-body">
+                                    <h6 class="card-subtitle mb-2 text-body-secondary"></h6>
+                                    <h5 class="card-title"></h5>
+                                    <p class="card-text"></p>
+                                </div>
+                            </div>
+                        </div>
+                </template>
+            
+        </section>
+        
+
+
+        <!-- Hammer Button-->
+        <div class="fixed-bottom bottom-0 ms-5 mb-5 d-flex flex-column flex-sm-row hammer-width">
+            <div class="accordion d-flex" id="accordionExample">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button me-3" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            Hammer Speed
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <button type="button" class="btn shadow btn-outline-success me-4 btn1 mb-3">Hammer speed
+                                1</button>
+                            <button type="button" class="btn shadow btn-outline-success me-4 btn2 mb-3">Hammer speed
+                                2</button>
+                            <button type="button" class="btn shadow btn-outline-success me-4 btn3 mb-3">Hammer speed
+                                3</button>
+                            <button type="button"
+                                class="btn shadow btn-outline-danger me-4 btn4  mb-4 mt-3 btnSmall">Stop</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </main>
+
+
+
+    <footer class="bg-body-tertiary shadow-footer">
+        <p class="d-flex text-white justify-content-center p-2">
+            Follow the developer in:
+        </p>
+        <nav class="d-flex justify-content-evenly mb-3">
+
+            <a href="https://www.facebook.com/stevens.aliaga.5" target="_blank"><i
+                    class="bi bi-facebook text-white fs-3 fs-lg-un"></i></a>
+            <a href="https://wa.me/51977931470?text=¡Hola!,%20me%20interesa%20tu%20trabajo..." target="_blank"><i
+                    class="bi bi-whatsapp text-white fs-3 fs-lg-un"></i></a>
+            <a href="https://github.com/ISAASPWDI" target="_blank"><i
+                    class="bi bi-github text-white fs-3 fs-lg-un"></i></a>
+            <a href="https://www.linkedin.com/in/stivens-aliaga-05bb39226/" target="_blank"><i
+                    class="bi bi-linkedin text-white fs-3 fs-lg-un"></i></a>
+        </nav>
+        <p class="d-flex text-white justify-content-center mb-0">
+            <small class="text-white">&copy; 2024 Stivens</small>
+        </p>
+
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./js/main.js" type="module"></script>
+
+</body>
+
+</html>
