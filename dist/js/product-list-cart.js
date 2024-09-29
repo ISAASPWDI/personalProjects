@@ -3,7 +3,7 @@ export function productList() {
     
     async function getDataDesserts() {
         try {
-            const res = await fetch('/api/getDataDesserts');
+            const res = await fetch('/getDataDesserts');
             const data = await res.json();
             return data;
         } catch (error) {
