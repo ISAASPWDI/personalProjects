@@ -34,7 +34,6 @@ app.use(
     })
 );
 app.use(morgan('dev'));
-app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, '..')));
 // servir archivos estaticos en desarrollo
 // app.use(express.static(path.join(__dirname, '..','dist')));
