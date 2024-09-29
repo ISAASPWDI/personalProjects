@@ -77,7 +77,7 @@ router.put('/editTask', (req, res) => {
 
 router.get('/getDataDesserts', async (req, res) => {
     try {
-        const readDessertData = await fs.readFile(path.join(__dirname, '..','dessert-data.json'), 'utf-8');
+        const readDessertData = await fs.readFile(path.join(__dirname, '..', 'dist','dessert-data.json'), 'utf-8');
         const parseDessertData = JSON.parse(readDessertData);
         res.json(parseDessertData);
     } catch (error) {
