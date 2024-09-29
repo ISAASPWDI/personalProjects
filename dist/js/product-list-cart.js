@@ -3,7 +3,7 @@ export function productList() {
     
     async function getDataDesserts() {
         try {
-            const res = await fetch('/getDataDesserts');
+            const res = await fetch('/.netlify/functions/api/getDataDesserts');
             const data = await res.json();
             return data;
         } catch (error) {
