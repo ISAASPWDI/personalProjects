@@ -25,7 +25,7 @@ export function toDoList() {
 
         if (taskId) {
             // Si hay un ID, estamos editando una tarea existente
-            fetch('/api/editTask', {
+            fetch('/editTask', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
@@ -53,7 +53,7 @@ export function toDoList() {
         } else {
             // Si no hay un ID, estamos agregando una nueva tarea
             if ($taskInput.value !== '') {
-                fetch('/api/addTask', {
+                fetch('/addTask', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -137,7 +137,7 @@ export function toDoList() {
         if (e.target.classList.contains('delete-icon-task') || e.target.classList.contains('bi-trash-fill')) {
             const taskId = e.target.dataset.id || e.target.closest('.bi-trash-fill').dataset.id;
             if (taskId) {
-                fetch('/api/delTask', {
+                fetch('/delTask', {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json',
@@ -176,7 +176,7 @@ export function toDoList() {
             const $divTask = e.target.closest('.div-task');
             const $divTaskId = $divTask.dataset.id;
             const $taskTextContent = $divTask.querySelector('.task-text').textContent;
-            fetch('/api/editTask', {
+            fetch('/editTask', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',

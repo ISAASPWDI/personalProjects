@@ -15,7 +15,9 @@ document.addEventListener("DOMContentLoaded",()=>{
     ageCalculator();
     uploader();
     toDoList();
-    productList();
     ApiFunction();
+    if (document.getElementById('product-list-template')) {
+        productList();
+    }
 });
 

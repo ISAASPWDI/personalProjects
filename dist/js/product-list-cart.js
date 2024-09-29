@@ -1,6 +1,10 @@
 export function productList() {
-
-    
+    const $template = document.getElementById('product-list-template');
+    const $productList = document.querySelector('.product-list');
+    if (!$template || !$productList) {
+        console.warn('Product list elements not found. Skipping productList() execution.');
+        return;
+    }
     async function getDataDesserts() {
         try {
             const res = await fetch('/.netlify/functions/api/getDataDesserts');
@@ -18,8 +22,7 @@ export function productList() {
     function showDesserts() {
         try {
             getDataDesserts().then((data) => {
-                const $template = document.getElementById('product-list-template');
-                const $productList = document.querySelector('.product-list');
+                
 
                 const $container = document.createElement('div');
                 $container.className = 'row row-cols-1 row-cols-md-3 g-4';
