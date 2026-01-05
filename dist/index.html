@@ -50,47 +50,78 @@
         </div>
     </nav>
 
-    <main class="sticky-top  mt-5 container">
+    <main class="sticky-top mt-5 container">
 
-        
-        <div id="carouselExample" class="carousel slide " data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                    aria-label="Slide 4"></button>
+        <!-- Sección de Presentación -->
+        <div class="py-5 my-5">
+            <div class="text-center mb-5">
+                <h1 class="display-4 fw-bold mb-3">Desarrollo Web Full-Stack</h1>
+                <p class="lead text-muted mb-4">Un conjunto completo de aplicaciones web modernas que demuestran el desarrollo con Node.js, Express.js y tecnologías frontend</p>
             </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./assets/images/asuna.png" class="img-fluid " alt="...">
+
+            <div class="row g-4 mb-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-list-check fs-1 text-primary mb-3"></i>
+                            <h5 class="card-title">Lista de Tareas</h5>
+                            <p class="card-text small">Añadir, editar y eliminar tareas con almacenamiento local</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./assets/images/charlotte.jpg" class="img-fluid "
-                        alt="...">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-cart3 fs-1 text-success mb-3"></i>
+                            <h5 class="card-title">Carrito de Productos</h5>
+                            <p class="card-text small">Selección dinámica con cálculo de total en tiempo real</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./assets/images/akagi.jpg" class="img-fluid "
-                        alt="...">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-calendar-event fs-1 text-warning mb-3"></i>
+                            <h5 class="card-title">Calculadora de Edad</h5>
+                            <p class="card-text small">Validación de fecha y cálculo preciso de edad</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="carousel-item">
-                    <img src="./assets/images/dk.jpg" class="img-fluid "
-                        alt="...">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card shadow-sm h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-calculator fs-1 text-danger mb-3"></i>
+                            <h5 class="card-title">Calculadora de Impuestos</h5>
+                            <p class="card-text small">Cálculos basados en múltiples tramos impositivos</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
+
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <h3 class="mb-3">🛠️ Tecnologías Utilizadas</h3>
+                    <div class="d-flex flex-wrap gap-2 mb-3">
+                        <span class="badge bg-primary fs-6">Node.js</span>
+                        <span class="badge bg-success fs-6">Express.js</span>
+                        <span class="badge bg-warning text-dark fs-6">JavaScript ES6+</span>
+                        <span class="badge bg-info fs-6">HTML5 & CSS3</span>
+                        <span class="badge bg-secondary fs-6">Bootstrap 5</span>
+                        <span class="badge bg-danger fs-6">Regex Validation</span>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h3 class="mb-3">✨ Características Clave</h3>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Arquitectura modular de JavaScript</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Enrutamiento backend con Express.js</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Validación integral de formularios</li>
+                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Diseño responsivo y accesible</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
+
         <div class="container uploader">
             <h3>Upload your own images</h3>
 
